@@ -6,10 +6,3 @@ sources:
     - 'node_modules'
 
 languages: 'JAVASCRIPT'
-
-#modules:
-#  - name: eslint
-#    enabled: true
-#    config:
-#      - name: config
-#        value: '.eslintrc'
