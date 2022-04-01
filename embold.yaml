@@ -1,0 +1,16 @@
+version: 1
+sources:
+  exclusions:
+    - 'config'
+    - 'database'
+    - 'public'
+    - 'node_modules'
+
+languages: 'JAVASCRIPT'
+
+modules:
+  - name: eslint
+    enabled: true
+    config:
+      - name: config
+        value: '.eslintrc'
