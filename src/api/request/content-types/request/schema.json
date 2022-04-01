@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests",
+  "info": {
+    "singularName": "request",
+    "pluralName": "requests",
+    "displayName": "Request",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "minLength": 2
+    },
+    "region": {
+      "type": "enumeration",
+      "enum": [
+        "Одеська область",
+        "Дніпровська область",
+        "Чернігівська область",
+        "Харківська область",
+        "Житомирська область",
+        "Полтавська область",
+        "Херсонська область",
+        "Київська область",
+        "Запорізька область",
+        "Луганська область",
+        "Донецька область",
+        "Вінницька область",
+        "Автономна Республіка Крим",
+        "Миколаївська область",
+        "Кіровоградська область",
+        "Сумська область",
+        "Львівська область",
+        "Черкаська область",
+        "Хмельницька область",
+        "Волинська область",
+        "Рівненська область",
+        "Івано-Франківська область",
+        "Тернопільська область",
+        "Закарпатська область",
+        "Чернівецька область"
+      ],
+      "required": true
+    },
+    "age": {
+      "type": "integer",
+      "required": true,
+      "max": 120,
+      "min": 1
+    },
+    "medicineStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Здоровий",
+        "Інвалід"
+      ],
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "minLength": 2
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true,
+      "maxLength": 13,
+      "minLength": 5
+    },
+    "message": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "evacuation",
+        "products",
+        "medicine"
+      ],
+      "required": true
+    },
+    "contactPerson": {
+      "type": "string",
+      "required": true,
+      "maxLength": 80,
+      "minLength": 2
+    }
+  }
+}

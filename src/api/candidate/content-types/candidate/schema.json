@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candidates",
+  "info": {
+    "singularName": "candidate",
+    "pluralName": "candidates",
+    "displayName": "Candidate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city": {
+      "type": "string",
+      "required": true,
+      "minLength": 2,
+      "maxLength": 20
+    },
+    "region": {
+      "type": "enumeration",
+      "enum": [
+        "Одеська область",
+        "Дніпровська область",
+        "Чернігівська область",
+        "Харківська область",
+        "Житомирська область",
+        "Полтавська область",
+        "Херсонська область",
+        "Київська область",
+        "Запорізька область",
+        "Луганська область",
+        "Донецька область",
+        "Вінницька область",
+        "Автономна Республіка Крим",
+        "Миколаївська область",
+        "Кіровоградська область",
+        "Сумська область",
+        "Львівська область",
+        "Черкаська область",
+        "Хмельницька область",
+        "Волинська область",
+        "Рівненська область",
+        "Івано-Франківська область",
+        "Тернопільська область",
+        "Закарпатська область",
+        "Чернівецька область"
+      ],
+      "required": true
+    },
+    "profession": {
+      "type": "enumeration",
+      "enum": [
+        "Лікар-психотерапевт",
+        "Вантажник",
+        "Сортувальник",
+        "Кухар",
+        "Водій з машиною",
+        "Кур'єр, фотограф",
+        "Електрик",
+        "Інформаційний волонтер",
+        "Людина з мед. підготовкою"
+      ],
+      "required": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30,
+      "minLength": 2
+    },
+    "lastName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30,
+      "minLength": 2
+    },
+    "middleName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30,
+      "minLength": 2
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true,
+      "maxLength": 13,
+      "minLength": 5
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
