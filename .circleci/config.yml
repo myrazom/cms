@@ -14,7 +14,7 @@ jobs:
           node-version: '14'
       - node/install-packages:
           pkg-manager: yarn
-          override-ci-command: yarn install --frozen-lockfile
+          override-ci-command: yarn install --immutable --immutable-cache --check-cache
 
 workflows:
   pr-quality-check:
