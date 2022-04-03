@@ -5,6 +5,8 @@ orbs:
 
 jobs:
   prepare:
+    docker:
+      - image: cimg/base:stable
     steps:
       - checkout
       - node/install:
